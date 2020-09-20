@@ -3,11 +3,10 @@ package ar.com.pooflix.api.entities;
 import org.bson.types.ObjectId;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-@Document(collection = "serie")
+@Document(collection = "directores")
 public class Director extends Persona {
 
     private ObjectId _id;
-
     private String estilo;
 
     public String getEstilo() {

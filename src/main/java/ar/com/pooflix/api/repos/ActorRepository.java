@@ -4,11 +4,9 @@ import org.bson.types.ObjectId;
 import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.stereotype.Repository;
 
-import ar.com.pooflix.api.entities.Serie;
+import ar.com.pooflix.api.entities.Actor;
 
 @Repository
-public interface SerieRepository extends MongoRepository<Serie, ObjectId> {
-    Serie findBy_id(ObjectId id);
-
-    Serie findByTitulo(String titulo);
+public interface ActorRepository extends MongoRepository<Actor, ObjectId> {
+    Actor findByNombre(String nombre);
 }

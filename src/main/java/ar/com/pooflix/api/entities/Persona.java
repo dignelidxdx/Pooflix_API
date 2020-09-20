@@ -2,16 +2,10 @@ package ar.com.pooflix.api.entities;
 
 public class Persona {
     
-    public String name;
-    public Integer edad;
+    private String nombre;
+    private Integer edad;
 
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
+ 
 
     public Integer getEdad() {
         return edad;
@@ -19,6 +13,14 @@ public class Persona {
 
     public void setEdad(Integer edad) {
         this.edad = edad;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
     }
 
 }

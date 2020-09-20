@@ -6,12 +6,11 @@ import java.util.List;
 import org.bson.types.ObjectId;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-@Document(collection = "serie")
+@Document(collection = "series")
 public class Serie {
     
     private ObjectId _id;
     private String titulo;
-    private Director director;
     private List<Temporada> temporadas = new ArrayList<>();
 
     public String get_id() {
@@ -38,12 +37,4 @@ public class Serie {
         this.temporadas = temporadas;
     }
 
-    public Director getDirector() {
-        return director;
-    }
-
-    public void setDirector(Director director) {
-        this.director = director;
-    }
-    
 }

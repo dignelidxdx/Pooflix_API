@@ -10,7 +10,8 @@ public class Temporada {
     private ObjectId _id;
     private Integer numero;
     private List<Capitulo> capitulos = new ArrayList<>();
-
+    private List<Websodio> websodios = new ArrayList<>();
+    
     public ObjectId get_id() {
         return _id;
     }
@@ -33,5 +34,13 @@ public class Temporada {
 
     public void setCapitulos(List<Capitulo> capitulos) {
         this.capitulos = capitulos;
+    }
+
+    public List<Websodio> getWebsodios() {
+        return websodios;
+    }
+
+    public void setWebsodios(List<Websodio> websodios) {
+        this.websodios = websodios;
     }
 }

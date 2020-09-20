@@ -10,4 +10,6 @@ import ar.com.pooflix.api.entities.Pelicula;
 public interface PeliculaRepository extends MongoRepository<Pelicula, ObjectId> {
     Pelicula findBy_id(ObjectId _id);
 
+    Pelicula findByTitulo(String titulo);
+
 }

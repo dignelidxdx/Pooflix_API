@@ -4,7 +4,7 @@ public class Capitulo {
     
     private String nombre;
     private String numero;
-    private Integer duracion;
+    private Double duracion;
 
     public String getNombre() {
         return nombre;
@@ -22,11 +22,11 @@ public class Capitulo {
         this.numero = numero;
     }
 
-    public Integer getDuracion() {
+    public Double getDuracion() {
         return duracion;
     }
 
-    public void setDuracion(Integer duracion) {
+    public void setDuracion(Double duracion) {
         this.duracion = duracion;
     }
 }
