@@ -10,7 +10,6 @@ import org.springframework.data.mongodb.core.mapping.Document;
 public class Serie extends Contenido {
     
     private ObjectId _id;
-    private String titulo;
     private List<Temporada> temporadas = new ArrayList<>();
 
     public String get_id() {
@@ -19,14 +18,6 @@ public class Serie extends Contenido {
 
     public void set_id(ObjectId _id) {
         this._id = _id;
-    }
-
-    public String getTitulo() {
-        return titulo;
-    }
-
-    public void setTitulo(String titulo) {
-        this.titulo = titulo;
     }
 
     public List<Temporada> getTemporadas() {

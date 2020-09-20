@@ -8,7 +8,6 @@ public class Actor extends Persona {
     
     private ObjectId _id;
     private String nivel;
-    private Integer posicion;
 
     public String getNivel() {
         return nivel;
@@ -18,11 +17,12 @@ public class Actor extends Persona {
         this.nivel = nivel;
     }
 
-    public Integer getPosicion() {
-        return posicion;
+    public String get_id() {
+        return _id.toHexString();
     }
 
-    public void setPosicion(Integer posicion) {
-        this.posicion = posicion;
+    public void set_id(ObjectId _id) {
+        this._id = _id;
     }
+
 }
