@@ -7,18 +7,9 @@ import org.bson.types.ObjectId;
 
 public class Genero {
     
-    private String nombre;
+    private String nombreGenero;
     private List<Pelicula> peliculas = new ArrayList<>();
     private List<Serie> series = new ArrayList<>();
-
-
-    public String getNombre() {
-        return nombre;
-    }
-
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
-    }
 
     public List<Pelicula> getPeliculas() {
         return peliculas;
@@ -34,6 +25,14 @@ public class Genero {
 
     public void setSeries(List<Serie> series) {
         this.series = series;
+    }
+
+    public String getNombreGenero() {
+        return nombreGenero;
+    }
+
+    public void setNombreGenero(String nombreGenero) {
+        this.nombreGenero = nombreGenero;
     }
 
 }

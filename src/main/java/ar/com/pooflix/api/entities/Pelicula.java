@@ -7,10 +7,11 @@ import org.bson.types.ObjectId;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 @Document(collection = "peliculas")
-public class Pelicula {
+public class Pelicula extends Contenido {
     
     private ObjectId _id;
     private boolean filmadaEnImax;
+    
 
     public String get_id() {
         return _id.toHexString();
@@ -27,6 +28,6 @@ public class Pelicula {
     public void setFilmadaEnImax(boolean filmadaEnImax) {
         this.filmadaEnImax = filmadaEnImax;
     }
-    
+
   
 }

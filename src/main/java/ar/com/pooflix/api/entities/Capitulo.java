@@ -3,7 +3,7 @@ package ar.com.pooflix.api.entities;
 public class Capitulo {
     
     private String nombre;
-    private String numero;
+    private Integer numero;
     private Double duracion;
 
     public String getNombre() {
@@ -14,11 +14,11 @@ public class Capitulo {
         this.nombre = nombre;
     }
 
-    public String getNumero() {
+    public Integer getNumero() {
         return numero;
     }
 
-    public void setNumero(String numero) {
+    public void setNumero(Integer numero) {
         this.numero = numero;
     }
 

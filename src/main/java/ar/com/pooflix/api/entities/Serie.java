@@ -7,7 +7,7 @@ import org.bson.types.ObjectId;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 @Document(collection = "series")
-public class Serie {
+public class Serie extends Contenido {
     
     private ObjectId _id;
     private String titulo;
